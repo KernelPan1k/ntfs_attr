@@ -41,8 +41,8 @@
 # -----------------------------------------------------------------------------
 
 # References:
-# Entended attributes in ntfs-3g
-# http://www.tuxera.com/community/ntfs-3g-advanced/extended-attributes/
+# Extended attributes in ntfs-3g
+# https://github.com/tuxera/ntfs-3g/wiki/Using-Extended-Attributes
 # NTFS File Attribute Constants
 # https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117(v=vs.85).aspx
 
@@ -85,7 +85,9 @@ show_usage () {
 cat << USAGE
 Usage: $0 [+r|-r] [+h|-h] [+s|-s] [+a|-a] [+c|-c] [+i|-i] [-L] files...
 Display or change attributes on an NTFS filesystem.
+
   -L, --no-dereference  affect symbolic links instead of referenced files
+
 Attributes: ( ! = unchangeable with this utility )
   r - Read-only
   h - Hidden
